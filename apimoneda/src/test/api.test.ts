@@ -1,4 +1,4 @@
-import {getApi} from '../services/api';
+
 
 describe('Pruebas en api.ts', () => {
 
