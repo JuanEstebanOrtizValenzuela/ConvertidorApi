@@ -50,9 +50,16 @@
                   Convertir
                 </button>
               </div>
-              <p/>
-              <div class="col-lg-12 col-md-6 col-sm-12 d-grid gap-2">
-                <input type="text" class="form-control" v-model="form.cambio" readonly/>
+              <div
+                id="formCambio"
+                class="col-lg-12 col-md-6 col-sm-12 d-grid gap-2"
+              >
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model="form.cambio"
+                  readonly
+                />
               </div>
             </div>
             <div class="row">
@@ -105,6 +112,12 @@ form {
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
+}
+
+#formCambio {
+  margin: 0 auto;
+  padding: 16px 2px;
+  width: 98.4%;
 }
 .form-control:focus {
   border-color: #18a383;
