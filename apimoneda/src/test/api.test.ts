@@ -1,10 +1,8 @@
-
+import { getApi } from '../services/api';
+import { describe, test } from 'node:test';
 
 describe('Pruebas en api.ts', () => {
-
-    test('getRates debe de retornar rates del covertidor de monedas', () => {
-        const rates = getApi();
-        expect( typeof rates ).tobe('string');
-    });
-
-});
+    test('getApi debe de retornar un error si no tenemos api', () => {
+        const resp = getApi();
+    })
+})

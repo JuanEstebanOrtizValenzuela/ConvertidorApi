@@ -23,7 +23,7 @@ export default {
         axios.get(
           `https://openexchangerates.org/api/latest.json?app_id=ce73408e6be2449987632e8771555f8a`
         )
-          .then(res => (this.info = res.data))
+          .then(res => (res.data))
           .then((data) => {
             const taza = data.rates[this.form.type_moneda_two];
             const taza2 = data.rates[this.form.type_moneda_one];
@@ -47,7 +47,7 @@ export default {
         axios.get(
           `https://openexchangerates.org/api/currencies.json?app_id=ce73408e6be2449987632e8771555f8a`
         )
-          .then(res => (this.info = res.data))
+          .then(res => (res.data))
           .then((data) => (this.name_moneda = data))
           .catch((e) => console.log(e));
       } catch (error) {

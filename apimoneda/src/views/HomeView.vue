@@ -1,4 +1,4 @@
-<script type="ts" src="../services/api.ts">
+<script lang="ts" src="../services/api.ts">
 </script>
 
 <template>
